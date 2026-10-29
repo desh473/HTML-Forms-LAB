@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+* { box-sizing: border-box; }
+body { background: #927057; color: #fff; margin: 0; padding: 20px; font-family: Oxygen, sans-serif; }
+.image-container { text-align: center; margin-top: 30px; }
+.image-container img { width: 68px; height: 68px; object-fit: cover; border: 5px solid #d5c395; }
+main { position: relative; width: 470px; max-width: 100%; margin: 30px auto 0; padding: 35px 60px 30px; background: #d5c395; }
+main::before { content: ""; position: absolute; top: -18px; left: calc(50% - 18px); border-left: 18px solid transparent; border-right: 18px solid transparent; border-bottom: 18px solid #d5c395; }
+h1 { font-size: 1.15em; margin: 0 0 18px; white-space: nowrap; }
+.field { margin-bottom: 15px; }
+.field input { width: 100%; border: 0; outline: 0; border-radius: 4px; background-color: #efe1c4; background-repeat: no-repeat; background-position: 10px center; background-size: 16px 16px; padding: 10px 10px 10px 38px; color: #927057; }
+.username { background-image: url('img/user.png'); }
+.password { background-image: url('img/pass.png'); }
+input[type="submit"] { width: 100%; border: 0; border-radius: 4px; background: #927057; padding: 10px; color: #d5c395; font-size: 1.1em; cursor: pointer; }
+footer { text-align: center; color: #efe1c4; font-size: .75em; margin-top: 14px; }
+@media (max-width: 520px) { main { padding: 32px 24px 26px; } h1 { white-space: normal; } }

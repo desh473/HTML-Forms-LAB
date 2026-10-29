@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 20px; color: #2D2D2D; font-family: Georgia, "Times New Roman", serif; }
+form { width: 300px; max-width: 100%; }
+fieldset { border: 2px groove #ddd; padding: 10px 15px 12px; }
+legend { font-size: 1.3em; padding: 0 3px; }
+label { display: block; font-size: 1.15em; margin: 4px 0 2px; }
+input, select, textarea { display: block; width: 100%; font-family: Arial, sans-serif; font-size: 16px; color: #2D2D2D; padding: 4px; border: 1px solid #ccc; background: #fff; }
+textarea { height: 212px; resize: both; }

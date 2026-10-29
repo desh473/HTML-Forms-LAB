@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 8px 20px;
+  background-color: #927057;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Profile Picture */
+
+.image-container {
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.image-container img {
+  width: 85px;
+  height: 80px;
+  object-fit: cover;
+  border: 4px solid #d5c395;
+}
+
+/* Main Login Container */
+
+main {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  min-height: 378px;
+  margin: 30px auto 0;
+  padding: 42px 36px 40px;
+  background-color: #d5c395;
+  color: white;
+}
+
+/* Triangle Above Login Box */
+
+main::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: calc(50% - 18px);
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid #d5c395;
+}
+
+/* Heading */
+
+h1 {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0 0 15px;
+  white-space: nowrap;
+}
+
+/* Form Fields */
+
+.field {
+  margin-bottom: 18px;
+}
+
+/* User and Password Icons */
+
+.field-icon {
+  display: block;
+  position: static;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  margin: 0 0 4px;
+  border: none;
+}
+
+/* Input Boxes */
+
+.field input {
+  display: block;
+  width: 100%;
+  height: 25px;
+  padding: 5px 35px;
+  background-color: #efe1c4;
+  color: #927057;
+  font-size: 11px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.field input::placeholder {
+  color: #b7aa91;
+}
+
+/* Submit Button */
+
+input[type="submit"] {
+  width: auto;
+  padding: 1px 3px;
+  font-size: 11px;
+  color: black;
+  background-color: #efefef;
+  border: 1px solid #999;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ddd;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: #efe1c4;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 400px) {
+
+  main {
+    padding: 35px 20px;
+  }
+
+  h1 {
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .image-container img {
+    width: 85px;
+    height: 80px;
+  }
+}
